@@ -1,0 +1,27 @@
+@import "../../config/global";
+@import "../../helper/mixin/current_screen";
+@include current_screen();
+
+.container 
+{
+    @include _break("mobile")
+    {
+        @include container();
+        height: 100%;
+    }    
+    @include _break("pad")
+    {
+        @include container();
+    }    
+    @include _break("desktop")
+    {
+        @include container();
+    }    
+
+    .span_1 
+    {
+        @include span(1 of 12);
+        background: #E46565;
+    }
+}
+

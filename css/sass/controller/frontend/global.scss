@@ -1,0 +1,22 @@
+// 
+// 放置網站都會使用的重複設定
+// 
+// 建議單獨使用 <link> 在 HTML 中，
+// 
+// 不應該被 @import 到SCSS中編譯
+// 
+
+@import "../../config/global";
+
+@import "compass/reset";
+
+*
+{
+    @include box-sizing(border-box);
+}
+
+html, body 
+{
+    height: 100%;
+}
+

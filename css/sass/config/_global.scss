@@ -1,0 +1,65 @@
+//system
+@import "susy";
+@import "breakpoint";
+@import "compass/css3";
+
+//custom
+@import "../helper/mixin/break";
+
+
+//-------- 設定 開始 -----------
+ 
+    //susy 環境設定
+    $susy: (
+          flow: ltr,
+          math: fluid,
+          output: float,
+          gutter-position: after,
+          container: auto,
+          container-position: center,
+          columns: 4,
+          gutters: 1/4,
+          column-width: false, 
+          global-box-sizing: content-box, 
+          last-flow: to,
+          debug: (
+                image: show,
+                color: rgba(#66f, .25),
+                output: background,
+                toggle: top right,
+          ),
+          use-custom: (
+                background-image: true,
+                background-options: false,
+                box-sizing: true,
+                clearfix: false,
+                rem: true,
+          )
+    );
+ 
+    //設定三種尺寸
+    $break_layout : 
+    (
+        mobile: 
+        (
+            break:  0px,
+            layout: 4
+        ), 
+        pad: 
+        (
+            break:  640px,
+            layout: 8
+        ), 
+        desktop: 
+        (
+            break:  1280px,
+            layout: 12
+        )
+ 
+    );
+ 
+ 
+//-------- 設定 結束 -----------
+ 
+
+ 

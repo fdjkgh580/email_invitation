@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+
+    <!-- 網站基本位置 -->
+    <base href=""> 
+    
+    <!-- css 跨頁共用 -->
+    <link rel="stylesheet" href="css/stylesheets/model/snippet.css">
+    <link rel="stylesheet" href="css/stylesheets/controller/frontend/global.css">
+
+    <!-- css 私有。只會出現在本頁的樣式 -->
+    <link rel="stylesheet" href="css/stylesheets/controller/frontend/index.css">
+
+    <!-- css 部份網頁共用。例如側邊攔(sidebar)，可能只會被局部的網頁中使用 -->
+
+    <!-- js -->
+    <script src="plugin/JS/require.js"></script>
+    <script src="appscript/controller/index/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="span_1">Welcome!</div>
+    </div>
+
+
+    <!-- 版面偵測使用 -->
+    <ul class="current_screen">
+        <li class="mobile"></li>
+        <li class="pad"></li>
+        <li class="desktop"></li>
+    </ul>
+</body>
+</html>
