@@ -4,34 +4,38 @@
 
 @import "../config/global";
 
-.model 
+
+//float
+.float
 {
-    //float
-    &-float
-    {
-        display: left;
-    }
-    &-floatr-ight 
-    {
-        display: right;
-    }
-    &-clear-both
-    {
-        clear: both;
-    }
+    float: left;
+}
+.float_right 
+{
+    float: right;
+}
+.clear_both
+{
+    clear: both;
+}
 
 
-    //display
-    &-hidden
-    {
-        display: none;
-    }
-    &-hidden-visi
-    {
-        visibility: hidden;
-    }
-    &-block
-    {
-        display: block;
-    }
+//display
+.hidden
+{
+    display: none;
+}
+.hidden_visi
+{
+    visibility: hidden;
+}
+
+//block
+.block
+{
+    display: block;
+}
+.inline_block
+{
+    display: block;
 }
