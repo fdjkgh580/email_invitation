@@ -1,0 +1,21 @@
+//設定三種尺寸
+$break_layout : 
+(
+    mobile: 
+    (
+        break:  0px,
+        layout: 6
+    ), 
+    pad: 
+    (
+        break:  500px,
+        layout: 8
+    ), 
+    desktop: 
+    (
+        break:  1280px,
+        layout: 20
+    )
+
+);
+
