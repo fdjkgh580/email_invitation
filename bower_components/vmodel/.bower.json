@@ -1,0 +1,38 @@
+{
+  "name": "vmodel",
+  "homepage": "https://github.com/fdjkgh580/vmodel.js",
+  "authors": [
+    "jsn"
+  ],
+  "main": "src/jquery.vmodel.min.js",
+  "dependencies": {
+    "jquery": "1.11.3"
+  },
+  "devDependencies": {
+    "jquery": "1.11.3"
+  },
+  "keywords": [
+    "jquery",
+    "vmodel",
+    "class",
+    "model",
+    "react"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "62844f3197",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "62844f31971d5383f613cfb9e145d9913af15a8d"
+  },
+  "_source": "git://github.com/fdjkgh580/vmodel.js.git",
+  "_target": "*",
+  "_originalSource": "vmodel"
+}

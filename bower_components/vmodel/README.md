@@ -1,0 +1,2 @@
+- 現在可以透過 Bower 進行安裝。如 bower install vmodel#master 
+- 說明文件請參考 <a href="http://creation.kiiuo.com/vmodel/doc/">http://creation.kiiuo.com/vmodel/doc/</a>

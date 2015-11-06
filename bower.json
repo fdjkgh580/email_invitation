@@ -3,5 +3,8 @@
     "version": "1.0.0",
     "dependencies": {
         "vmodel": null,
+        "jquery-mousewheel": null,
+        "jquery.transit": null,
+        "requirejs": null
     }
 }
