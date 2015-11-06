@@ -21,21 +21,25 @@
 
 
 //display
-.hidden
+.hide
 {
-    display: none;
+    display: none !important;
 }
 .hidden_visi
 {
-    visibility: hidden;
+    visibility: hidden !important;
 }
 
 //block
 .block
 {
-    display: block;
+    display: block !important;
 }
 .inline_block
 {
-    display: block;
+    display: block !important;
+}
+.inline 
+{
+    display: inline !important;
 }
