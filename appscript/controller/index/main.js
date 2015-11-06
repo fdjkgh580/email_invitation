@@ -12,9 +12,9 @@ var index_main = new function ()
         //添加初始化要載入的程式碼
         require
         ([
-            'plugin/JS/jquery-1.11.1.min',
-            'plugin/JS/jquery.transit.min',
-            'plugin/JS/jquery.mousewheel.min',
+            'bower_components/jquery/dist/jquery.min',
+            'bower_components/jquery.transit/jquery.transit',
+            'bower_components/jquery-mousewheel/jquery.mousewheel.min',
             'appscript/libraries/screen_do'
         ], 
         
