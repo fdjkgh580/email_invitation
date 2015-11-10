@@ -17,11 +17,11 @@ module.exports = function(grunt) {
                     // 啟用擴展
                     expand: true,
                     // 來源的路徑
-                    cwd: 'appscript',
+                    cwd: 'appscript/',
                     // 將不是 .min.js 的檔案全部進行壓縮
                     src: ['**/*.js', '!*.min.js'],
                     // 輸出的路徑
-                    dest: 'appscript',
+                    dest: 'appscript/',
                     // 額外壓縮成 .min.js 而不會覆蓋
                     ext: '.min.js'
                 }]

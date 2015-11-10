@@ -11,7 +11,7 @@ $(function (){
                 console.log("識別偵測版面的元素不存在，請先建立。");
             }
         }
-
+ 
         /**
          * 監控當視窗發生改變時，會執行什麼事情
          * @param   function param.mobile   手機   
