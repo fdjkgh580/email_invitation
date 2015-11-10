@@ -1,0 +1,2 @@
+/*! my-web-project 2015-11-10 */
+$(function(){$(".current_screen").vmodel("--global/diff_screen",!0,function(){var a=this;this.autoload=["check"],this.check=function(){var b=a.root.length;0==b&&console.log("識別偵測版面的元素不存在，請先建立。")},this.event=function(b){a.check(),"mobile"==a.current()?b.mobile&&b.mobile():"pad"==a.current()?b.pad&&b.pad():"desktop"==a.current()&&b.desktop&&b.desktop()},this.current=function(){var b=a.root.find("li:visible").attr("class");return"mobile"==b?b:"pad"==b?b:"desktop"==b?b:!1}})});

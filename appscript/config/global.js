@@ -12,19 +12,19 @@ var setting = shimdeps({
     'mousewheel': ['bower_components/jquery-mousewheel/jquery.mousewheel.min', [
         'jquery'
     ]],
-    'diff_screen': ['appscript/controller/global/md/diff_screen', [
+    'diff_screen': ['appscript-min/controller/global/md/diff_screen', [
         'vmodel'
     ]],
-    'frame': ['appscript/controller/global/md/frame', [
+    'frame': ['appscript-min/controller/global/md/frame', [
         'diff_screen'
     ]],
-    'mobile': ['appscript/controller/global/md/when_mobile', [
+    'mobile': ['appscript-min/controller/global/md/when_mobile', [
         'vmodel'
     ]],
-    'pad': ['appscript/controller/global/md/when_pad', [
+    'pad': ['appscript-min/controller/global/md/when_pad', [
         'vmodel'
     ]],
-    'desktop': ['appscript/controller/global/md/when_desktop', [
+    'desktop': ['appscript-min/controller/global/md/when_desktop', [
         'vmodel'
     ]],
 });
