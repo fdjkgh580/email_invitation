@@ -24,7 +24,7 @@ $(function (){
              */
             this.event = function (param){
                 vs.check();
-                console.log('trigger')
+                
                 if (vs.current() == "mobile") {
                     if (param.mobile) param.mobile.call();
                 }
