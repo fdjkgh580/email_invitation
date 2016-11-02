@@ -1,6 +1,6 @@
 // 檔案與依賴
 var setting = shimdeps({
-    'welcome': ['appscript/controller/main/md/welcome.min', [
+    'welcome': ['appscript/min/controller/main/md/welcome', [
         'vmodel'
     ]]
 });
