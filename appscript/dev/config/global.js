@@ -23,7 +23,7 @@ var shimdeps_global = {
         false
     ],
     'jquery-ui': [path_plugin + 'jquery-ui/jquery-ui.min', [
-        'jquery', 'css!bower_components/jquery-ui/themes/base/jquery-ui.min'
+        'jquery', 'css!' + path_plugin + 'jquery-ui/themes/base/jquery-ui.min'
     ]],
     'vmodel': [path_plugin + 'vmodel.js/src/jquery.vmodel.min', [
         'jquery'
@@ -33,6 +33,9 @@ var shimdeps_global = {
     ]],
     'transit': [path_plugin + 'jquery.transit/jquery.transit', [
         'jquery'
+    ]],
+    'fancybox': [path_plugin + 'fancybox/source/jquery.fancybox.pack', [
+        'jquery', 'css!' + path_plugin + 'fancybox/source/jquery.fancybox'
     ]],
     'mousewheel': [path_plugin + 'jquery-mousewheel/jquery.mousewheel.min', [
         'jquery'
@@ -52,6 +55,8 @@ var shimdeps_global = {
     'desktop': [path_appscript + 'controller/global/md/when_desktop', [
         'vmodel'
     ]],
+
+
 };
 
 // 添加避免緩存

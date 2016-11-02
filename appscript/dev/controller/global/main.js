@@ -5,4 +5,5 @@ requirejs([
     'mousewheel',
     'frame',
     'diff_screen',
+    'fancybox'
 ]);
