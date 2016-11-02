@@ -1,12 +1,14 @@
 // 檔案與依賴
-var setting = shimdeps({
-    'welcome': ['appscript/min/controller/main/md/welcome', [
+var setting_page = {
+    'welcome': [path_appscript + 'controller/main/md/welcome', [
         'vmodel'
     ]]
-});
+};
 
-// 避免緩存
-setting.urlArgs = "bust=" +  (new Date()).getTime()
+
 
 //進行設定
+var setting     = shimdeps(Object.assign(setting_global, setting_page));
+setting.urlArgs = urlArgs;
+setting.map     = map;
 requirejs.config(setting);

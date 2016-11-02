@@ -1,2 +1,2 @@
 /*! my-web-project 2016-11-02 */
-var setting=shimdeps({welcome:["appscript/min/controller/main/md/welcome",["vmodel"]]});setting.urlArgs="bust="+(new Date).getTime(),requirejs.config(setting);
+var setting_page={welcome:[path_appscript+"controller/main/md/welcome",["vmodel"]]},setting=shimdeps(Object.assign(setting_global,setting_page));setting.urlArgs=urlArgs,setting.map=map,requirejs.config(setting);

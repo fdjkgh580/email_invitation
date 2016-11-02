@@ -1,50 +1,63 @@
-// 檔案與依賴
-var setting = shimdeps({
-    'jquery': ['bower_components/jquery/dist/jquery.min', 
+/**
+ * 開發環境
+ * dev: 開發的路徑
+ * min: 壓縮後的路徑
+ */
+var environment    = "min"; 
+
+/**
+ * appscript 的路徑
+ */
+var path_appscript = "appscript/" + environment + "/";
+
+/**
+ * 外掛套件的路徑
+ */
+var path_plugin    = "bower_components/";
+
+// 全域檔案與依賴
+var setting_global = {
+    'jquery': [path_plugin + 'jquery/dist/jquery.min', 
         false
     ],
-    'jquery-ui': ['bower_components/jquery-ui/jquery-ui.min', [
+    'jquery-ui': [path_plugin + 'jquery-ui/jquery-ui.min', [
         'jquery', 'css!bower_components/jquery-ui/themes/base/jquery-ui.min'
     ]],
-    'vmodel': ['bower_components/vmodel.js/src/jquery.vmodel.min', [
+    'vmodel': [path_plugin + 'vmodel.js/src/jquery.vmodel.min', [
         'jquery'
     ]],
-    'vpage': ['bower_components/vpage.js/src/jquery.vpage.min', [
+    'vpage': [path_plugin + 'vpage.js/src/jquery.vpage.min', [
         'jquery'
     ]],
-    'transit': ['bower_components/jquery.transit/jquery.transit', [
+    'transit': [path_plugin + 'jquery.transit/jquery.transit', [
         'jquery'
     ]],
-    'mousewheel': ['bower_components/jquery-mousewheel/jquery.mousewheel.min', [
+    'mousewheel': [path_plugin + 'jquery-mousewheel/jquery.mousewheel.min', [
         'jquery'
     ]],
-    'diff_screen': ['appscript/min/controller/global/md/diff_screen', [
+    'diff_screen': [path_appscript + 'controller/global/md/diff_screen', [
         'vmodel'
     ]],
-    'frame': ['appscript/min/controller/global/md/frame', [
+    'frame': [path_appscript + 'controller/global/md/frame', [
         'diff_screen'
     ]],
-    'mobile': ['appscript/min/controller/global/md/when_mobile', [
+    'mobile': [path_appscript + 'controller/global/md/when_mobile', [
         'vmodel'
     ]],
-    'pad': ['appscript/min/controller/global/md/when_pad', [
+    'pad': [path_appscript + 'controller/global/md/when_pad', [
         'vmodel'
     ]],
-    'desktop': ['appscript/min/controller/global/md/when_desktop', [
+    'desktop': [path_appscript + 'controller/global/md/when_desktop', [
         'vmodel'
     ]],
-});
+};
 
 // 避免緩存
-setting.urlArgs = "bust=" +  (new Date()).getTime()
+var urlArgs = "bust=" +  (new Date()).getTime()
 
-// CSS 載入
-setting.map = {
+// 載入 require 套件
+var map = {
     '*': {
-        'css': 'bower_components/require-css/css.js' 
+        'css': path_plugin + 'require-css/css.js' 
     }
 }
-console.log(setting);
-
-//進行設定
-requirejs.config(setting);
