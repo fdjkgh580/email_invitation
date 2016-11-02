@@ -2,9 +2,12 @@
     "name": "franfram",
     "version": "1.0.0",
     "dependencies": {
-        "vmodel": null,
-        "jquery-mousewheel": null,
-        "jquery.transit": null,
-        "requirejs": null
+        "jquery": "master",
+        "vmodel.js": "master",
+        "vpage.js": "master",
+        "jquery-mousewheel": "master",
+        "jquery.transit": "master",
+        "requirejs": "master",
+        "require-css": "master"
     }
 }

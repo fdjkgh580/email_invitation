@@ -6,6 +6,7 @@ var setting = shimdeps({
     'vmodel': ['bower_components/vmodel/src/jquery.vmodel.min', [
         'jquery'
     ]],
+    
     'transit': ['bower_components/jquery.transit/jquery.transit', [
         'jquery'
     ]],
