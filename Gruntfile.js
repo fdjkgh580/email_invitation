@@ -17,20 +17,20 @@ module.exports = function(grunt) {
                     // 啟用擴展
                     expand: true,
                     // 來源的路徑
-                    cwd: 'appscript/',
+                    cwd: 'appscript/dev/',
                     // 將不是 .min.js 的檔案全部進行壓縮
-                    src: ['**/*.js', '!*.min.js'],
+                    src: ['**/*.js'],
                     // 輸出的路徑
-                    dest: 'appscript/',
+                    dest: 'appscript/min/',
                     // 額外壓縮成 .min.js 而不會覆蓋
-                    ext: '.min.js'
+                    ext: '.js'
                 }]
             }
         },
         // 設定監控異動
         watch: {
             //監控的檔案
-            files: ['**/*'],
+            files: ['appscript/dev/**/*'],
             // 監控發生異動，任務要指派給哪個外掛套件
             tasks: ['uglify'],
             options: {
