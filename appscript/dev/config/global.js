@@ -3,12 +3,9 @@ var setting = shimdeps({
     'jquery': ['bower_components/jquery/dist/jquery.min', 
         false
     ],
-    'jquery-ui-css': ['bower_components/jquery-ui/themes/base/jquery-ui.min', 
-        "jquery"
-    ],
-    'jquery-ui': ['bower_components/jquery-ui/jquery-ui.min', 
-        "jquery", "css!jquery-ui-css"
-    ],
+    'jquery-ui': ['bower_components/jquery-ui/jquery-ui.min', [
+        'jquery', 'css!bower_components/jquery-ui/themes/base/jquery-ui.min'
+    ]],
     'vmodel': ['bower_components/vmodel.js/src/jquery.vmodel.min', [
         'jquery'
     ]],
@@ -47,6 +44,7 @@ setting.map = {
         'css': 'bower_components/require-css/css.js' 
     }
 }
+console.log(setting);
 
 //進行設定
 requirejs.config(setting);

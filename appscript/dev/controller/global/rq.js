@@ -1,5 +1,6 @@
 requirejs([
-    'jquery',  
+    'jquery', 
+    'jquery-ui', 
     'transit',
     'mousewheel',
     'frame',
