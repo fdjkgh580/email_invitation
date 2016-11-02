@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "dependencies": {
         "jquery": "master",
+        "jquery-ui": "master",
         "vmodel.js": "master",
         "vpage.js": "master",
         "jquery-mousewheel": "master",
