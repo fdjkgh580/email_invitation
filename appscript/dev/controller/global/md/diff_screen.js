@@ -24,14 +24,15 @@ $(function (){
              */
             this.event = function (param){
                 vs.check();
+                console.log('trigger')
                 if (vs.current() == "mobile") {
-                    if (param.mobile) param.mobile();
+                    if (param.mobile) param.mobile.call();
                 }
                 else if (vs.current() == "pad") {
-                    if (param.pad) param.pad();
+                    if (param.pad) param.pad.call();
                 }
                 else if (vs.current() == "desktop") {
-                    if (param.desktop) param.desktop();
+                    if (param.desktop) param.desktop.call();
                 }
             }
 

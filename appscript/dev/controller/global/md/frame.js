@@ -16,25 +16,27 @@ $(function (){
             }
 
             this.doevent = function(){
+                // 利用 requirejs 可以避免程式重複載入
                 $.vmodel.get("global/diff_screen").event({
                     
                     //手機
-                    mobile: function (){require(
+                    mobile: function (){requirejs(
                     [
                         'mobile'
                     ])},
 
                     //平板
-                    pad: function (){require(
+                    pad: function (){requirejs(
                     [
                         'pad'
                     ])},
                     
                     //桌電
-                    desktop: function (){require(
+                    desktop: function (){requirejs(
                     [
                         'desktop',
                     ])}
+
                 });
             }
         }

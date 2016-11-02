@@ -15,8 +15,10 @@ var path_appscript = "appscript/" + environment + "/";
  */
 var path_plugin    = "bower_components/";
 
-// 全域檔案與依賴
-var setting_global = {
+/**
+ * 全域檔案與依賴
+ */
+var shimdeps_global = {
     'jquery': [path_plugin + 'jquery/dist/jquery.min', 
         false
     ],
@@ -52,7 +54,7 @@ var setting_global = {
     ]],
 };
 
-// 避免緩存
+// 添加避免緩存
 var urlArgs = "bust=" +  (new Date()).getTime()
 
 // 載入 require 套件
