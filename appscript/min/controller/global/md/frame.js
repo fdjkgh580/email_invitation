@@ -1,2 +1,2 @@
-/*! my-web-project 2016-11-02 */
+/*! my-web-project 2016-11-21 */
 $(function(){$.vmodel.create({selector:window,model:"--global/frame",isautoload:!0,method:function(){var a=this;this.autoload=["doevent","screen_do"],this.screen_do=function(){$(window).resize(function(){a.doevent()})},this.doevent=function(){$.vmodel.get("global/diff_screen").event({mobile:function(){requirejs(["mobile"])},pad:function(){requirejs(["pad"])},desktop:function(){requirejs(["desktop"])}})}}})});

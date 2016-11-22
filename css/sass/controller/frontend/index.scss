@@ -20,8 +20,21 @@
 
     .span_1 
     {
-        @include span(1 of 12);
-        background: #E46565;
+        @include _break("mobile")
+        {
+            @include span(1);
+            background: #E46565;
+        }
+        @include _break("pad")
+        {
+            @include span(2);
+        }
+        @include _break("desktop")
+        {
+            @include span(3);
+        }
     }
 }
+
+
 

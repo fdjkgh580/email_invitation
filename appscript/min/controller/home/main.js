@@ -1,2 +1,2 @@
-/*! my-web-project 2016-11-02 */
+/*! my-web-project 2016-11-21 */
 requirejs(["welcome"]);

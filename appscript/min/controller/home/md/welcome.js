@@ -1,2 +1,2 @@
-/*! my-web-project 2016-11-02 */
-console.log("welcome");
+/*! my-web-project 2016-11-21 */
+$(function(){$().vmodel({selector:".container",model:"--hello",isautoload:!0,method:function(){this.autoload=["init"],this.init=function(){console.log("use jquery.vmodel.js"),console.log("Hello World")}}})});
