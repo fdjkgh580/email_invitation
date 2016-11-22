@@ -1,7 +1,7 @@
 $(function (){
 	$().vmodel({
 	    selector: '.container', 
-	    model: '--hello', 
+	    model: '--welcome', 
 	    isautoload: true, 
 	    method: function (){
 	        var vs = this;
