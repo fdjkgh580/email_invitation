@@ -1,0 +1,32 @@
+@import "../../config/global";
+.container {
+    @include _break("mobile")
+    {
+        background: red;
+    }
+    @include _break("pad")
+    {
+        background: green;
+    }
+    @include _break("desktop")
+    {
+        background: blue;
+    }
+    
+
+    .tit {
+        @include _break("mobile")
+        {
+            font-size: 16px;
+        }
+        @include _break("pad")
+        {
+            font-size: 36px;
+        }
+        @include _break("desktop")
+        {
+            font-size: 72px;
+        }
+        
+    }
+}
