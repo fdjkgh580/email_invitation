@@ -282,9 +282,11 @@ html, body
                     @include _break("mobile")
                     {
                         @include full;
+                        @include container;
                     }
                     @include _break("pad")
                     {
+                        max-width: inherit; // 取消 4 欄的最寬限制
                         margin-bottom: 15px;                        
                     }
                     @include _break("desktop")
@@ -297,18 +299,52 @@ html, body
                     {
                         @include _break("mobile")
                         {
-                            @include full;
+                            @include span(4 of 4);
                             margin-bottom: 40px;
                         }
                         @include _break("pad")
                         {
-                            @include gallery(2 of 4); 
+                            // @include gallery(2 of 4); 
                         }
                         @include _break("desktop")
                         {
                             
                         }
                         
+                        &.left 
+                        {
+                            @include _break("mobile")
+                            {
+                                
+                            }
+                            @include _break("pad")
+                            {
+                                @include span(2 of 4);
+                                clear: both;
+                            }
+                            @include _break("desktop")
+                            {
+                                
+                            }
+                        }
+
+                        &.right 
+                        {
+                            @include _break("mobile")
+                            {
+                                
+                            }
+                            @include _break("pad")
+                            {
+                                @include span(2 of 4 last);
+                                clear: right;
+                            }
+                            @include _break("desktop")
+                            {
+                                
+                            }
+                            
+                        }
 
                         .icon 
                         {
@@ -486,7 +522,6 @@ html, body
 
 .download
 {
-    @extend .padding20;
     @extend .remove-a-style;
     @include _break("mobile")
     {

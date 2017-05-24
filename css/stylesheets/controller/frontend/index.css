@@ -65,7 +65,7 @@ html, body {
   height: 100%;
 }
 
-.padding20, .container_wrap .container_inner .page.desc .header, .container_wrap .container_inner .page.desc .title, .container_wrap .container_inner .page.desc .download_desc, .container_wrap .container_inner .page.info, .container_wrap .container_inner .page.info .boxsite .box .sub, .container_wrap .container_inner .page.about p, .container_wrap .container_inner .page.contact p, .download {
+.padding20, .container_wrap .container_inner .page.desc .header, .container_wrap .container_inner .page.desc .title, .container_wrap .container_inner .page.desc .download_desc, .container_wrap .container_inner .page.info, .container_wrap .container_inner .page.info .boxsite .box .sub, .container_wrap .container_inner .page.about p, .container_wrap .container_inner .page.contact p {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -276,16 +276,24 @@ html, body {
     float: left;
     margin-left: 0;
     margin-right: 0;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container_wrap .container_inner .page.info .boxsite:after {
+    content: " ";
+    display: block;
+    clear: both;
   }
 }
 @media (min-width: 600px) {
   .container_wrap .container_inner .page.info .boxsite {
+    max-width: inherit;
     margin-bottom: 15px;
   }
 }
 @media (min-width: 0px) {
   .container_wrap .container_inner .page.info .boxsite .box {
-    clear: both;
     width: 100%;
     float: left;
     margin-left: 0;
@@ -294,20 +302,19 @@ html, body {
   }
 }
 @media (min-width: 600px) {
-  .container_wrap .container_inner .page.info .boxsite .box {
+  .container_wrap .container_inner .page.info .boxsite .box.left {
     width: 46.875%;
     float: left;
-  }
-  .container_wrap .container_inner .page.info .boxsite .box:nth-child(2n + 1) {
-    margin-left: 0;
-    margin-right: -100%;
+    margin-right: 6.25%;
     clear: both;
-    margin-left: 0;
   }
-  .container_wrap .container_inner .page.info .boxsite .box:nth-child(2n + 2) {
-    margin-left: 53.125%;
-    margin-right: -100%;
-    clear: none;
+}
+@media (min-width: 600px) {
+  .container_wrap .container_inner .page.info .boxsite .box.right {
+    width: 46.875%;
+    float: right;
+    margin-right: 0;
+    clear: right;
   }
 }
 .container_wrap .container_inner .page.info .boxsite .box .icon {
