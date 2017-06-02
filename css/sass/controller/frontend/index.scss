@@ -1,37 +1,39 @@
 @import "../../config/global";
 
-*
+
+// model start
+@mixin global-setting() 
 {
     @include box-sizing(border-box);
     font-family: "Arial" !important;
 }
 
-html, body 
-{
-    height: 100%;
-}
-
-.padding20
+@mixin padding20() 
 {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.background-cover
-{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.remove-a-style 
+@mixin remove-a-style() 
 {
     color: inherit;
     text-decoration: none;
 }
 
+// model end
+
+
+
+
+html, body 
+{
+    @include global-setting;
+    height: 100%;
+}
+
 .container_wrap
 {
+    @include global-setting;
     min-height: 100%;
     padding: 25px 10px;
     background: #d7e6e0;
@@ -39,12 +41,13 @@ html, body
     .container_inner 
     {
         
-        
+        @include global-setting;
         @include container;
         min-height: 100%;
 
         .page
         {
+            @include global-setting;
             @include full;
             border-radius: 10px;
             text-align: center;
@@ -53,21 +56,25 @@ html, body
             
             &.desc 
             {
+                @include global-setting;
                 background: white;
 
                 .header
                 {
-                    @extend .padding20;
+                    @include global-setting;
+                    @include padding20;
 
                     height: 115px;
 
                     .link
                     {
+                        @include global-setting;
                         text-align: left;
                         @include span(1 of 4);
 
                         .logo 
                         {
+                            @include global-setting;
                             display: inline-block;
                             margin-top: 40px;
                             width: 55px;
@@ -77,7 +84,8 @@ html, body
 
                     .westamps
                     {
-                        @extend .remove-a-style;
+                        @include global-setting;
+                        @include remove-a-style;
 
                         text-align: right;
                         color: #43ba84;
@@ -91,6 +99,7 @@ html, body
 
                 .banner
                 {
+                    @include global-setting;
                     height: 250px;
                     background-repeat: no-repeat;
                     background-size: 100%;
@@ -100,7 +109,8 @@ html, body
 
                 .title
                 {
-                    @extend .padding20;
+                    @include global-setting;
+                    @include padding20;
 
                     @include full;
                     color: #444444;
@@ -112,7 +122,8 @@ html, body
 
                 .download_desc
                 {
-                    @extend .padding20;
+                    @include global-setting;
+                    @include padding20;
 
                     @include full;
                     color: #f7a70c;
@@ -125,13 +136,15 @@ html, body
 
             &.info 
             {
-                @extend .padding20;
+                @include global-setting;
+                @include padding20;
                 
                 background: white;
                 padding: 0 40px;                    
 
                 .title 
                 {
+                    @include global-setting;
                     @include full;
                     color: #43ba84;
                     line-height: 1.5em;
@@ -143,6 +156,7 @@ html, body
 
                 .boxsite
                 {
+                    @include global-setting;
                     @include full;
                     @include container;
                     max-width: inherit; // 取消 4 欄的最寬限制
@@ -150,28 +164,33 @@ html, body
 
                     .box 
                     {
+                        @include global-setting;
                         @include span(4 of 4);
                         margin-bottom: 40px;
                         
                         &.left 
                         {
+                            @include global-setting;
                             @include span(2 of 4);
                             clear: both;
                         }
 
                         &.right 
                         {
+                            @include global-setting;
                             @include span(2 of 4 last);
                             clear: right;
                         }
 
                         .icon 
                         {
+                            @include global-setting;
                             margin-bottom: 20px;
                         }
 
                         .title2 
                         {
+                            @include global-setting;
                             @include full;
                             background-color: #dbf4e3;
                             border-top: 2px solid #43ba84;
@@ -185,7 +204,8 @@ html, body
 
                         .sub
                         {
-                            @extend .padding20;
+                            @include global-setting;
+                            @include padding20;
 
                             color: #444444;
                             line-height: 1.5em;
@@ -199,7 +219,7 @@ html, body
 
             &.about 
             {
-                
+                @include global-setting;
                 background-position: top; 
                 background-repeat: no-repeat;
                 background-color: #1c744e;
@@ -208,7 +228,8 @@ html, body
                 
                 p
                 {
-                    @extend .padding20;
+                    @include global-setting;
+                    @include padding20;
 
                     color: white;
                     font-size: 16px;
@@ -218,16 +239,19 @@ html, body
 
                     .bold 
                     {
+                        @include global-setting;
                         font-weight: bold;
                     }
 
                 &.or 
                 {
+                    @include global-setting;
                     margin-bottom: 0px;
                 }
 
                     &.notice 
                     {
+                        @include global-setting;
                         color: #f7a70c;
                         font-weight: bold;
                         margin-bottom: 60px;
@@ -240,15 +264,19 @@ html, body
 
             &.contact 
             {
+                @include global-setting;
+
                 p 
                 {
-                    @extend .padding20;
+                    @include global-setting;
+                    @include padding20;
                     font-size: 16px;
                     color: #444444;
                     line-height: 1.5em;
 
                     a 
                     {
+                        @include global-setting;
                         color: #0161ce;
                     }
                 }
@@ -267,7 +295,8 @@ html, body
 
 .download
 {
-    @extend .remove-a-style;
+    @include global-setting;
+    @include remove-a-style;
     
     border-radius: 10px;
     background: #f7a70c;
