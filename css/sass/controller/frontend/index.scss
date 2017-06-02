@@ -1,6 +1,4 @@
 @import "../../config/global";
-// @import "compass/reset";
-
 
 *
 {
@@ -34,53 +32,24 @@ html, body
 
 .container_wrap
 {
-    @include _break("mobile")
-    {
-        min-width: 320px;
-        min-height: 100%;
-        padding: 25px 10px;
-        background: #d7e6e0;
-    }    
-    @include _break("pad")
-    {
-    }    
-    @include _break("desktop")
-    {
-    }
+    min-height: 100%;
+    padding: 25px 10px;
+    background: #d7e6e0;
 
     .container_inner 
     {
-        @include _break("mobile")
-        {
-            @include container;
-            min-height: 100%;
-        }
-        @include _break("pad")
-        {
-            @include container;
-            
-        }
-        @include _break("desktop")
-        {
-            
-        }
+        
+        
+        @include container;
+        min-height: 100%;
 
         .page
         {
-            @include _break("mobile")
-            {
-                @include full;
-                border-radius: 10px;
-                text-align: center;
-                margin-bottom: 15px;
-            }
-            @include _break("pad")
-            {
-                margin-bottom: 20px;
-            }
-            @include _break("desktop")
-            {
-            }
+            @include full;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            
             
             &.desc 
             {
@@ -89,20 +58,8 @@ html, body
                 .header
                 {
                     @extend .padding20;
-                    
-                    @include _break("mobile")
-                    {
-                        height: 80px;
-                    }
-                    @include _break("pad")
-                    {
-                        height: 115px;
-                    }
-                    @include _break("desktop")
-                    {
-                        
-                    }
-                    
+
+                    height: 115px;
 
                     .link
                     {
@@ -111,239 +68,101 @@ html, body
 
                         .logo 
                         {
-                            @include _break("mobile")
-                            {
-                                margin-top: 17px;
-                                display: inline-block;
-                                width: 45px;
-                                height: 45px;
-                            }
-                            @include _break("pad")
-                            {
-                                margin-top: 40px;
-                                width: 55px;
-                                height: 55px;
-                            }
-                            @include _break("desktop")
-                            {
-                                
-                            }
-                            
+                            display: inline-block;
+                            margin-top: 40px;
+                            width: 55px;
+                            height: 55px;
                         }
                     }
-
-                    
 
                     .westamps
                     {
                         @extend .remove-a-style;
 
-                        @include _break("mobile")
-                        {
-                            text-align: right;
-                            font-size: 28px;
-                            color: #43ba84;
-                            @include span(3 of 4 last);
-                            margin-top: 29px;
-                            font-weight: bold;
-                        }
-                        @include _break("pad")
-                        {
-                            margin-top: 50px;
-                            font-size: 36px;
-                        }
-                        @include _break("desktop")
-                        {
-                        }
-                        
+                        text-align: right;
+                        color: #43ba84;
+                        @include span(3 of 4 last);
+                        font-weight: bold;
+                        margin-top: 50px;
+                        font-size: 36px;
                        
                     }
                 }
 
                 .banner
                 {
-                    @include _break("mobile")
-                    {
-                        height: 200px;
-                        background-repeat: no-repeat;
-                        background-size: 157%;
-                        background-position: -170px 0px;
-                        margin-bottom: 20px;
-                    }
-                    @include _break("pad")
-                    {
-                        height: 250px;
-                        background-size: 100%;
-                        background-position: 0px 0px;
-                        margin-bottom: 30px;
-                    }
-                    @include _break("desktop")
-                    {
-                        
-                    }
-                    
+                    height: 250px;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-position: 0px 0px;
+                    margin-bottom: 30px;
                 }
 
                 .title
                 {
                     @extend .padding20;
 
-                    @include _break("mobile")
-                    {
-                        @include full;
-                        font-size: 18px;
-                        color: #444444;
-                        line-height: 1.5em;
-                        margin-bottom: 20px;
-                    }
-                    @include _break("pad")
-                    {
-                        font-size: 20px;
-                    }
-                    @include _break("desktop")
-                    {
-                        
-                    }
-                    
-                }
-
+                    @include full;
+                    color: #444444;
+                    line-height: 1.5em;
+                    margin-bottom: 20px;
+                    font-size: 20px;
                 
+                }
 
                 .download_desc
                 {
                     @extend .padding20;
 
-                    @include _break("mobile")
-                    {
-                        @include full;
-                        color: #f7a70c;
-                        line-height: 1.5em;
-                        font-weight: bold;
-                        font-size: 20px;
-                        margin-bottom: 20px;
-                    }
-                    @include _break("pad")
-                    {
-                        margin-bottom: 30px;
-                    }
-                    @include _break("desktop")
-                    {
-                        
-                    }
-                    
+                    @include full;
+                    color: #f7a70c;
+                    line-height: 1.5em;
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin-bottom: 30px;
                 }
             }
 
             &.info 
             {
                 @extend .padding20;
-
-                @include _break("mobile")
-                {
-                    background: white;
-                }
-                @include _break("pad")
-                {
-                    padding: 0 40px;                    
-                }
-                @include _break("desktop")
-                {
-                    
-                }
                 
+                background: white;
+                padding: 0 40px;                    
 
                 .title 
                 {
-                    @include _break("mobile")
-                    {
-                        @include full;
-                        color: #43ba84;
-                        line-height: 1.5em;
-                        font-weight: bold;
-                        font-size: 24px;
-                        margin-top: 30px;
-                        margin-bottom: 40px;
-                    }
-                    @include _break("pad")
-                    {
-                        font-size: 30px;
-                        margin-top: 55px;
-                        margin-bottom: 30px;
-                    }
-                    @include _break("desktop")
-                    {
-                        
-                    }
-                    
+                    @include full;
+                    color: #43ba84;
+                    line-height: 1.5em;
+                    font-weight: bold;
+                    font-size: 30px;
+                    margin-top: 55px;
+                    margin-bottom: 30px;
                 }
 
                 .boxsite
                 {
-                    @include _break("mobile")
-                    {
-                        @include full;
-                        @include container;
-                    }
-                    @include _break("pad")
-                    {
-                        max-width: inherit; // 取消 4 欄的最寬限制
-                        margin-bottom: 15px;                        
-                    }
-                    @include _break("desktop")
-                    {
-                        
-                    }
-                    
+                    @include full;
+                    @include container;
+                    max-width: inherit; // 取消 4 欄的最寬限制
+                    margin-bottom: 15px;
 
                     .box 
                     {
-                        @include _break("mobile")
-                        {
-                            @include span(4 of 4);
-                            margin-bottom: 40px;
-                        }
-                        @include _break("pad")
-                        {
-                            // @include gallery(2 of 4); 
-                        }
-                        @include _break("desktop")
-                        {
-                            
-                        }
+                        @include span(4 of 4);
+                        margin-bottom: 40px;
                         
                         &.left 
                         {
-                            @include _break("mobile")
-                            {
-                                
-                            }
-                            @include _break("pad")
-                            {
-                                @include span(2 of 4);
-                                clear: both;
-                            }
-                            @include _break("desktop")
-                            {
-                                
-                            }
+                            @include span(2 of 4);
+                            clear: both;
                         }
 
                         &.right 
                         {
-                            @include _break("mobile")
-                            {
-                                
-                            }
-                            @include _break("pad")
-                            {
-                                @include span(2 of 4 last);
-                                clear: right;
-                            }
-                            @include _break("desktop")
-                            {
-                                
-                            }
-                            
+                            @include span(2 of 4 last);
+                            clear: right;
                         }
 
                         .icon 
@@ -353,48 +172,24 @@ html, body
 
                         .title2 
                         {
-                            @include _break("mobile")
-                            {
-                                @include full;
-                                background-color: #dbf4e3;
-                                border-top: 2px solid #43ba84;
-                                border-bottom: 2px solid #43ba84;
-                                font-size: 16px;
-                                color: #43ba84;
-                                line-height: 37px;
-                                font-weight: bold;
-                                margin-bottom: 15px;
-                            }
-                            @include _break("pad")
-                            {
-                                font-size: 20px;
-                                
-                            }
-                            @include _break("desktop")
-                            {
-                                
-                            }
-                            
+                            @include full;
+                            background-color: #dbf4e3;
+                            border-top: 2px solid #43ba84;
+                            border-bottom: 2px solid #43ba84;
+                            color: #43ba84;
+                            line-height: 37px;
+                            font-weight: bold;
+                            margin-bottom: 15px;
+                            font-size: 20px;
                         }
 
                         .sub
                         {
                             @extend .padding20;
-                            @include _break("mobile")
-                            {
-                                font-size: 18px;
-                                color: #444444;
-                                line-height: 1.5em;
-                            }
-                            @include _break("pad")
-                            {
-                                font-size: 20px;
-                            }
-                            @include _break("desktop")
-                            {
-                                
-                            }
-                            
+
+                            color: #444444;
+                            line-height: 1.5em;
+                            font-size: 20px;
                         }
                     }
 
@@ -404,48 +199,22 @@ html, body
 
             &.about 
             {
-                @include _break("mobile")
-                {
-                    background-position: top; 
-                    background-size: 198%;
-                    background-repeat: no-repeat;
-                    padding-top: 132px;
-                    background-color: #1c744e;
-                }
-                @include _break("pad")
-                {
-                    background-size: 100%;
-                    padding-top: 153px;
-                }
-                @include _break("desktop")
-                {
-                    
-                }
                 
+                background-position: top; 
+                background-repeat: no-repeat;
+                background-color: #1c744e;
+                background-size: 100%;
+                padding-top: 153px;
                 
                 p
                 {
                     @extend .padding20;
 
-                    @include _break("mobile")
-                    {
-                        color: white;
-                        font-size: 16px;
-                        line-height: 1.5em;
-                        margin-bottom: 1.5em;
-                    }
-                    @include _break("pad")
-                    {
-                        padding: 0 60px;
-                        line-height: 2em;
-                        margin-bottom: 2em;
-                    }
-                    @include _break("desktop")
-                    {
-                        
-                    }
-                    
-
+                    color: white;
+                    font-size: 16px;
+                    padding: 0 60px;
+                    line-height: 2em;
+                    margin-bottom: 2em;
 
                     .bold 
                     {
@@ -454,39 +223,15 @@ html, body
 
                 &.or 
                 {
-                    @include _break("mobile")
-                    {
-                        
-                    }
-                    @include _break("pad")
-                    {
-                        margin-bottom: 0px;
-                    }
-                    @include _break("desktop")
-                    {
-                        
-                    }
-                    
+                    margin-bottom: 0px;
                 }
 
                     &.notice 
                     {
-                        @include _break("mobile")
-                        {
-                            color: #f7a70c;
-                            font-size: 20px;
-                            font-weight: bold;
-                        }
-                        @include _break("pad")
-                        {
-                            margin-bottom: 60px;
-                            font-size: 24px;
-                        }
-                        @include _break("desktop")
-                        {
-                            
-                        }
-                        
+                        color: #f7a70c;
+                        font-weight: bold;
+                        margin-bottom: 60px;
+                        font-size: 24px;
                     }
                 }
 
@@ -523,31 +268,17 @@ html, body
 .download
 {
     @extend .remove-a-style;
-    @include _break("mobile")
-    {
-        border-radius: 10px;
-        background: #f7a70c;
-        color: #ffffff;
-        font-size: 24px;
-        border: none;
-        display: inline-block;
-        width: 212px;
-        height: 50px;
-        line-height: 50px;
-        margin-bottom: 20px;
-        font-weight: bold;
-    }
-    @include _break("pad")
-    {
-        font-size: 26px;
-        width: 243px;
-        height: 59px;
-        line-height: 59px;
-        margin-bottom: 30px;
-    }
-    @include _break("desktop")
-    {
-        
-    }
     
+    border-radius: 10px;
+    background: #f7a70c;
+    color: #ffffff;
+    border: none;
+    display: inline-block;
+    font-weight: bold;
+    
+    font-size: 26px;
+    width: 243px;
+    height: 59px;
+    line-height: 59px;
+    margin-bottom: 30px;
 }
